@@ -43,8 +43,8 @@ const numbers = [1, 2, 3, 4, 5];
 const incremenetTwo = numbers.map(number => 2 * number);
 console.log(incremenetTwo);
 
-const greaterThenThree = numbers.filter(number => number > 3);
-console.log(greaterThenThree);
+const greaterThanThree = numbers.filter(number => number > 3);
+console.log(greaterThanThree);
 
 console.log(7 > 6 > 5); // 1 > 5 => false
 console.log(5 < 6 < 7); // 1 < 7 => true

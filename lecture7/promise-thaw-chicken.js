@@ -14,10 +14,18 @@ const thawChicken = minutes => {
   });
 }
 
-// thawChicken(10 /* minutes */).then(
-//   chicken => console.log(`What we have after waiting? - ${chicken}`),
-//   error => console.log(`Error message ${error.message}`)
-// );
+thawChicken(10 /* minutes */).then(
+  chicken => console.log(`What we have after waiting? - ${chicken}`),
+  error => console.log(`Error message ${error.message}`)
+);
+
+
+thawChicken(19).then((message) => {
+  console.log(`What we have after waiting? - ${message}`)
+}).catch((error) => {
+  console.log(`Error message ${error.message}`);
+});
+
 
 const onFulfilled = (message) => {
   console.log(`What we have after waiting? - ${message}`)
